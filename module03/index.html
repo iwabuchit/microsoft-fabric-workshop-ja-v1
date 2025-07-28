@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../module02/">
       
       
-        <link rel="next" href="../module02/">
+        <link rel="next" href="../module04/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>モジュール1. はじめに - Microsoft Fabric HandsOn Workshop JP</title>
+        <title>モジュール3. データ取り込みと準備 - Microsoft Fabric HandsOn Workshop JP</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#3" class="md-skip">
           Skip to content
         </a>
       
@@ -129,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              モジュール1. はじめに
+              モジュール3. データ取り込みと準備
             
           </span>
         </div>
@@ -240,6 +240,50 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../module01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    モジュール1. はじめに
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    モジュール2. レイクハウスの構築
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -257,7 +301,7 @@
   
   
   <span class="md-ellipsis">
-    モジュール1. はじめに
+    モジュール3. データ取り込みと準備
     
   </span>
   
@@ -270,7 +314,7 @@
   
   
   <span class="md-ellipsis">
-    モジュール1. はじめに
+    モジュール3. データ取り込みと準備
     
   </span>
   
@@ -313,7 +357,25 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      ワークスペースを作成する
+      ショートカットの作成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ショートカットからのテーブル作成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sparkを使ったデータ加工
     </span>
   </a>
   
@@ -323,50 +385,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../module02/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    モジュール2. レイクハウスの構築
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../module03/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    モジュール3. データ取り込みと準備
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -462,7 +480,25 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      ワークスペースを作成する
+      ショートカットの作成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ショートカットからのテーブル作成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sparkを使ったデータ加工
     </span>
   </a>
   
@@ -484,37 +520,156 @@
 
 
 
-<h1 id="1">モジュール1. はじめに</h1>
+<h1 id="3">モジュール3. データ取り込みと準備</h1>
 <h3 id="_1">📢 導入</h3>
 <p>このモジュールでは、ハンズオン ワークショップで利用するワークスペースを作成します。既に作成済みの環境を利用する際はスキップしてください。</p>
 <h3 id="_2">🎯 ゴール</h3>
 <ul>
 <li>ワークスペースの作成</li>
 </ul>
-<h2 id="_3">ワークスペースを作成する</h2>
+<h2 id="_3">ショートカットの作成</h2>
 <ol>
 <li>
-<p>Fabric ホームページ(以下のURL)にメールアドレスを入力し、サインインします。</p>
+<p>エクスプローラーの<strong>Files</strong>を右クリックし<strong>新しいショートカット</strong>を選択します。</p>
+<p><a class="glightbox" href="../images/module03/image.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image.png" /></a></p>
 </li>
 <li>
-<p>Power BI のホーム画面が開きますので、左のバーの「ワークスペース」をクリックし、 「新しいワークスペース」をクリック</p>
-<p><a class="glightbox" href="../images/module01/image.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module01/image.png" /></a></p>
+<p><strong>Azure Data Lake Storage Gen2</strong>を選択します。</p>
+<p><a class="glightbox" href="../images/module03/image-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-1.png" /></a></p>
 </li>
 <li>
-<p>ワークスペースの<strong>名前</strong>を入力し<strong>詳細</strong>をクリック</p>
-<p><a class="glightbox" href="../images/module01/image-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module01/image-1.png" /></a></p>
-<p><strong>試用版</strong>を選択し<strong>適用</strong>します。</p>
-<p><a class="glightbox" href="../images/module01/image-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module01/image-2.png" /></a></p>
-</li>
-<li>
-<p>ワークスペースが作成されると、以下の画面が表示されます。</p>
-<p><a class="glightbox" href="../images/module01/image-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module01/image-3.png" /></a></p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>ワークスペースがたくさんあると毎回探すのが大変なのでピン止めしておくと楽ちんです。<br />
-ワークスペースの一覧から、自分のワークスペースを検索しピン止めボタンを押すと固定できます。</p>
+<p><strong>新しい接続</strong>を選択し接続情報を入力します。</p>
+<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
+<p><strong>URL</strong></p>
+<div class="highlight"><pre><span></span><code>https://wwilab001adls001.dfs.core.windows.net/
+</code></pre></div>
+<p><strong>接続名</strong></p>
+<div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_06_datasource_adls
+</code></pre></div>
+<p><strong>認証の種類</strong></p>
+<p>組織アカウント</p>
 </div>
-<p><a class="glightbox" href="../images/module01/image-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module01/image-4.png" width="80%" /></a></p>
+<p><a class="glightbox" href="../images/module03/image-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-2.png" /></a></p>
+</li>
+<li>
+<p><strong>datasource</strong>をチェック✅し<strong>次へ</strong>をクリックします。</p>
+<p><a class="glightbox" href="../images/module03/image-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-3.png" /></a></p>
+</li>
+<li>
+<p>変換はスキップします。</p>
+<p><a class="glightbox" href="../images/module03/image-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-4.png" /></a></p>
+</li>
+<li>
+<p><strong>アクション</strong>のペンマークをクリックしショートカット名を入力しチェック✅後に<strong>作成</strong>をクリックします。</p>
+<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
+<p><strong>ショートカット名</strong></p>
+<div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_07_shortcut_adls
+</code></pre></div>
+</div>
+<p><a class="glightbox" href="../images/module03/image-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-5.png" /></a></p>
+</li>
+</ol>
+<h2 id="_4">ショートカットからのテーブル作成</h2>
+<ol>
+<li>
+<p>作成したショートカットからファイルを右クリックし、<strong>テーブルに読み込む</strong>＞<strong>新しいテーブル</strong>を選択します。</p>
+<p><a class="glightbox" href="../images/module03/image-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-6.png" /></a></p>
+</li>
+<li>
+<p>テーブル名が<strong>taxi_zone_lookup</strong>となっていることを確認して読み込みます。</p>
+<p><a class="glightbox" href="../images/module03/image-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-8.png" /></a></p>
+</li>
+<li>
+<p>作成されたテーブルをクリックして中身を確認します。</p>
+<p><a class="glightbox" href="../images/module03/image-9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-9.png" /></a></p>
+</li>
+</ol>
+<h2 id="spark">Sparkを使ったデータ加工</h2>
+<ol>
+<li>
+<p>自身のワークスペースをクリックし、<strong>データの処理</strong>の<strong>新しい項目</strong>をクリックします。</p>
+<p><a class="glightbox" href="../images/module03/image-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-10.png" /></a></p>
+</li>
+<li>
+<p>ノートブックを選択します。</p>
+<p><a class="glightbox" href="../images/module03/image-11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-11.png" /></a></p>
+</li>
+<li>
+<p>左上の<strong>Notebook 1</strong>をクリックし名前を変更します。</p>
+<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
+<p><strong>名前</strong></p>
+<div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_10_notebook_create_delta_table
+</code></pre></div>
+</div>
+<p><a class="glightbox" href="../images/module03/image-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-12.png" /></a></p>
+</li>
+<li>
+<p><strong>データ項目の追加</strong>から<strong>既存のデータ ソース</strong>を選択します。</p>
+<p><a class="glightbox" href="../images/module03/image-13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-13.png" /></a></p>
+</li>
+<li>
+<p>自身のデータレイクを選択し<strong>接続</strong>します。</p>
+<p><a class="glightbox" href="../images/module03/image-14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-14.png" /></a></p>
+</li>
+<li>
+<p>フォルダをクリックし、表示されたファイルをノートブックにドラッグ＆ドロップします。</p>
+<p><a class="glightbox" href="../images/module03/image-15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-15.png" /></a></p>
+</li>
+<li>
+<p>セルの左側の▶をクリックすると、処理が実行されデータが下に表示されます。</p>
+<p><a class="glightbox" href="../images/module03/image-16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-16.png" /></a></p>
+</li>
+<li>
+<p><strong>新しいグラフ</strong>をクリックするとグラフに表示が切り替わります。<br />
+<strong>編集を開始する</strong>をクリックするとさまざまなグラフに変更できます。</p>
+<p><a class="glightbox" href="../images/module03/image-17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-17.png" /></a></p>
+</li>
+<li>
+<p>グラフの種類や軸のデータを変更し、グラフが変化することを確認してください。<br />
+    例えば、グラフの種類を散布図に変更してX軸を<strong>trip_distance</strong>、Y軸を<strong>total_amount</strong>にすると次のように表示されます。</p>
+<p><a class="glightbox" href="../images/module03/image-18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-18.png" /></a></p>
+</li>
+<li>
+<p>グラフの左下にマウスをホバーさせて<strong>＋コード</strong>をクリックしセルを追加します。</p>
+<p><a class="glightbox" href="../images/module03/image-19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-19.png" /></a></p>
+</li>
+<li>
+<p>追加されたセルに次のコードを入力します。</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#1</span>
+<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;ehail_fee&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_clean</span><span class="p">)</span>
+</code></pre></div>
+<p><a class="glightbox" href="../images/module03/image-20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-20.png" /></a></p>
+</li>
+<li>
+<p>同じ要領でセルを追加して次のコードを入力します。</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#2</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_clean</span><span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="s1">&#39;passenger_count&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">#3</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pyspark.sql.functions</span><span class="w"> </span><span class="kn">import</span> <span class="n">col</span>
+<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;passenger_count&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">#4</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_clean</span><span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="s1">&#39;passenger_count&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">#5</span>
+<span class="n">table_name</span> <span class="o">=</span> <span class="s1">&#39;curated_green_tripdata_2022_12&#39;</span>
+<span class="n">df_clean</span><span class="o">.</span><span class="n">write</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="s2">&quot;overwrite&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;delta&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;Tables/&quot;</span> <span class="o">+</span> <span class="n">table_name</span><span class="p">)</span>
+</code></pre></div>
+</li>
+<li>
+<p>5つのセルの入力が完了したら<strong>すべて実行</strong>をクリックします。<br />
+    すべてのセルでエラーが発生していないことを確認します。</p>
+<p><a class="glightbox" href="../images/module03/image-21.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-21.png" /></a></p>
+</li>
+<li>
+<p>エクスプローラーのTablesを右クリックし、最新の情報に更新します。</p>
+<p><a class="glightbox" href="../images/module03/image-22.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-22.png" /></a></p>
+</li>
+<li>
+<p>ノートブックで作成されたテーブル<strong>curated_green_tripdata_2022_12</strong>が作成されていることを確認します。</p>
+<p><a class="glightbox" href="../images/module03/image-23.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-23.png" /></a></p>
 </li>
 </ol>
 
