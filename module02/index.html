@@ -522,10 +522,12 @@
 
 <h1 id="2">モジュール2. レイクハウスの構築</h1>
 <h3 id="_1">📢 導入</h3>
-<p>モジュールの目的は、レイクハウスを構築しテーブルのデータを取り込み、必要に応じて変換を適用し、取り込まれたデータをレイクハウスデルタテーブルに使用してレポートを作成するエンドツーエンドのジャーニーをすばやく構築することです。</p>
+<p>このモジュールでは、NYCタクシーデータを題材に、レイクハウスの構築からデータの取り込み・加工までを一連の流れで体験します。Data Factoryのローコード機能（Data Flow Gen2）を活用し、実践的なデータ処理スキルを身につけます。</p>
 <h3 id="_2">🎯 ゴール</h3>
 <ul>
-<li>レイクハウスの作成</li>
+<li>レイクハウスの作成と構成理解</li>
+<li>外部データの取り込みと保存</li>
+<li>データの加工とテーブルへの書き込み</li>
 </ul>
 <h2 id="_3">レイクハウスの作成</h2>
 <ol>
@@ -536,7 +538,7 @@
 <li>
 <p>データレイク名を入力し<strong>作成</strong>をクリックします。 ※Lakehouseスキーマのチェックは本手順ではチェックを入れないでください<br />
     先頭には、[イニシャル]+[2桁の数字]_を入れてください。</p>
-<div class="grid" markdown>
+<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
 <p><strong>データレイク名</strong></p>
 <div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_01_lakehouse_taxi
 </code></pre></div>
@@ -553,7 +555,7 @@
 </li>
 <li>
 <p>新しいサブフォルダー名を入力し作成をクリックします。</p>
-<div class="grid" markdown>
+<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
 <p><strong>フォルダー名</strong></p>
 <div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_02_data_triprecode
 </code></pre></div>
@@ -625,7 +627,7 @@
 </li>
 <li>
 <p>名前を入力しGit統合のチェックを外し<strong>作成</strong>をクリックします。</p>
-<div class="grid" markdown>
+<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
 <p><strong>名前</strong></p>
 <div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_05_dataflow_curated
 </code></pre></div>
@@ -683,7 +685,7 @@
 <li>
 <p>データをどこに保存するか選択します。<br />
     右下の<strong>データ同期先</strong>の右側にある<strong>＋</strong>をクリックしレイクハウスを選択します。</p>
-<p><a class="glightbox" href="../images/module02/image-41.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module02/image-41.png" /></a></p>
+<p><a class="glightbox" href="../images/module02/image-41.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module02/image-41.png" width="80%" /></a></p>
 </li>
 <li>
 <p><strong>接続の資格情報</strong>はデフォルトのままで<strong>次へ</strong>をクリックします。</p>
