@@ -355,16 +355,25 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#adls-gen2" class="md-nav__link">
     <span class="md-ellipsis">
-      ショートカットの作成
+      ショートカットの作成（ADLS Gen2を利用）
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#sharepoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      ショートカットの作成（SharePointを利用）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       ショートカットからのテーブル作成
     </span>
@@ -433,6 +442,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    モジュール6. Data Agent の作成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -478,16 +509,25 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#adls-gen2" class="md-nav__link">
     <span class="md-ellipsis">
-      ショートカットの作成
+      ショートカットの作成（ADLS Gen2を利用）
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#sharepoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      ショートカットの作成（SharePointを利用）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       ショートカットからのテーブル作成
     </span>
@@ -522,23 +562,27 @@
 
 <h1 id="3">モジュール3. データ取り込みと準備</h1>
 <h3 id="_1">📢 導入</h3>
-<p>このモジュールでは、Azure Data Lake Storage Gen2との接続を通じて、外部データの取り込みからテーブル作成、Sparkノートブックを用いたデータ加工までを一連の流れで学びます。ローコードとコードベースの両方のアプローチを活用し、実践的なデータ準備スキルを習得します。</p>
+<p>このモジュールでは、Azure Data Lake Storage Gen2もしくはSharePointとの接続を通じて、外部データの取り込みからテーブル作成、Sparkノートブックを用いたデータ加工までを一連の流れで学びます。ローコードとコードベースの両方のアプローチを活用し、実践的なデータ準備スキルを習得します。</p>
 <h3 id="_2">🎯 ゴール</h3>
 <ul>
-<li>Azure Data Lake Storage Gen2への接続とショートカット作成</li>
+<li>Azure Data Lake Storage Gen2もしくはSharePointへの接続とショートカット作成</li>
 <li>外部ファイルからのテーブル作成</li>
 <li>Sparkノートブックを用いたデータ加工とDeltaテーブルの作成</li>
 <li>グラフ表示によるデータの可視化</li>
 </ul>
-<h2 id="_3">ショートカットの作成</h2>
+<h2 id="adls-gen2">ショートカットの作成（ADLS Gen2を利用）</h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Copilotを利用して作業する方は <a href="#sharepoint">こちら</a> の手順に進んでください。</p>
+</div>
 <ol>
 <li>
 <p>エクスプローラーの<strong>Files</strong>を右クリックし<strong>新しいショートカット</strong>を選択します。</p>
-<p><a class="glightbox" href="../images/module03/image.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image.png" /></a></p>
+<p><a class="glightbox" href="../images/module03/image-24.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-24.png" /></a></p>
 </li>
 <li>
 <p><strong>Azure Data Lake Storage Gen2</strong>を選択します。</p>
-<p><a class="glightbox" href="../images/module03/image-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-1.png" /></a></p>
+<p><a class="glightbox" href="../images/module03/image-25.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-25.png" /></a></p>
 </li>
 <li>
 <p><strong>新しい接続</strong>を選択し接続情報を入力します。</p>
@@ -552,11 +596,11 @@
 <p><strong>認証の種類</strong></p>
 <p>組織アカウント</p>
 </div>
-<p><a class="glightbox" href="../images/module03/image-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-2.png" /></a></p>
+<p><a class="glightbox" href="../images/module03/image-26.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-26.png" /></a></p>
 </li>
 <li>
 <p><strong>datasource</strong>をチェック✅し<strong>次へ</strong>をクリックします。</p>
-<p><a class="glightbox" href="../images/module03/image-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-3.png" /></a></p>
+<p><a class="glightbox" href="../images/module03/image-27.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-27.png" /></a></p>
 </li>
 <li>
 <p>変換はスキップします。</p>
@@ -569,22 +613,64 @@
 <div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_07_shortcut_adls
 </code></pre></div>
 </div>
-<p><a class="glightbox" href="../images/module03/image-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-5.png" /></a></p>
+<p><a class="glightbox" href="../images/module03/image-28.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-28.png" /></a></p>
 </li>
 </ol>
-<h2 id="_4">ショートカットからのテーブル作成</h2>
+<h2 id="sharepoint">ショートカットの作成（SharePointを利用）</h2>
+<ol>
+<li>
+<p>エクスプローラーの<strong>Files</strong>を右クリックし<strong>新しいショートカット</strong>を選択します。</p>
+<p><a class="glightbox" href="../images/module03/image-24.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-24.png" /></a></p>
+</li>
+<li>
+<p><strong>SharePoint フォルダー</strong>を選択します。</p>
+<p><a class="glightbox" href="../images/module03/image-32.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-32.png" /></a></p>
+</li>
+<li>
+<p><strong>新しい接続</strong>を選択し接続情報を入力します。</p>
+<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
+<p><strong>URL</strong></p>
+<div class="highlight"><pre><span></span><code>https://mngenvmcap464372.sharepoint.com/sites/FabricE2EHandsOnWS2
+</code></pre></div>
+<p><strong>接続名</strong></p>
+<div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_06_datasource_spo
+</code></pre></div>
+<p><strong>認証の種類</strong></p>
+<p>組織アカウント</p>
+</div>
+<p><a class="glightbox" href="../images/module03/image-33.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-33.png" /></a></p>
+</li>
+<li>
+<p><strong>datasource</strong>をチェック✅し<strong>次へ</strong>をクリックします。</p>
+<p><a class="glightbox" href="../images/module03/image-34.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-34.png" /></a></p>
+</li>
+<li>
+<p>変換はスキップします。</p>
+<p><a class="glightbox" href="../images/module03/image-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-4.png" /></a></p>
+</li>
+<li>
+<p><strong>アクション</strong>のペンマークをクリックしショートカット名を入力しチェック✅後に<strong>作成</strong>をクリックします。</p>
+<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
+<p><strong>ショートカット名</strong></p>
+<div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_07_shortcut_spo
+</code></pre></div>
+</div>
+<p><a class="glightbox" href="../images/module03/image-35.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-35.png" /></a></p>
+</li>
+</ol>
+<h2 id="_3">ショートカットからのテーブル作成</h2>
 <ol>
 <li>
 <p>作成したショートカットからファイルを右クリックし、<strong>テーブルに読み込む</strong>＞<strong>新しいテーブル</strong>を選択します。</p>
-<p><a class="glightbox" href="../images/module03/image-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-6.png" /></a></p>
+<p><a class="glightbox" href="../images/module03/image-29.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-29.png" /></a></p>
 </li>
 <li>
 <p>テーブル名が<strong>taxi_zone_lookup</strong>となっていることを確認して読み込みます。</p>
-<p><a class="glightbox" href="../images/module03/image-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-8.png" width="80%" /></a></p>
+<p><a class="glightbox" href="../images/module03/image-30.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-30.png" width="80%" /></a></p>
 </li>
 <li>
 <p>作成されたテーブルをクリックして中身を確認します。</p>
-<p><a class="glightbox" href="../images/module03/image-9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-9.png" /></a></p>
+<p><a class="glightbox" href="../images/module03/image-31.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module03/image-31.png" /></a></p>
 </li>
 </ol>
 <h2 id="spark">Sparkを使ったデータ加工</h2>

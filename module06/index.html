@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../module04/">
+        <link rel="prev" href="../module05/">
       
-      
-        <link rel="next" href="../module06/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>モジュール5. Power BIレポートの作成 - Microsoft Fabric E2E Workshop JP</title>
+        <title>モジュール6. Data Agent の作成 - Microsoft Fabric E2E Workshop JP</title>
       
     
     
@@ -93,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#5-power-bi" class="md-skip">
+        <a href="#6-data-agent" class="md-skip">
           Skip to content
         </a>
       
@@ -129,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              モジュール5. Power BIレポートの作成
+              モジュール6. Data Agent の作成
             
           </span>
         </div>
@@ -328,6 +326,28 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../module05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    モジュール5. Power BIレポートの作成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -345,7 +365,7 @@
   
   
   <span class="md-ellipsis">
-    モジュール5. Power BIレポートの作成
+    モジュール6. Data Agent の作成
     
   </span>
   
@@ -358,7 +378,7 @@
   
   
   <span class="md-ellipsis">
-    モジュール5. Power BIレポートの作成
+    モジュール6. Data Agent の作成
     
   </span>
   
@@ -401,16 +421,61 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      セマンティック モデルの作成
+      タスクの追加
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#power-bi" class="md-nav__link">
+  <a href="#data-agent" class="md-nav__link">
     <span class="md-ellipsis">
-      Power BIレポートの作成
+      Data Agent の作成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      データソースの接続
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      エージェントの設定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      エージェントのテスト
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      エージェントのクエリ履歴の確認
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      さいごに
     </span>
   </a>
   
@@ -420,28 +485,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../module06/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    モジュール6. Data Agent の作成
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -493,16 +536,61 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      セマンティック モデルの作成
+      タスクの追加
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#power-bi" class="md-nav__link">
+  <a href="#data-agent" class="md-nav__link">
     <span class="md-ellipsis">
-      Power BIレポートの作成
+      Data Agent の作成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      データソースの接続
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      エージェントの設定
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      エージェントのテスト
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      エージェントのクエリ履歴の確認
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      さいごに
     </span>
   </a>
   
@@ -524,170 +612,140 @@
 
 
 
-<h1 id="5-power-bi">モジュール5. Power BIレポートの作成</h1>
+<h1 id="6-data-agent">モジュール6. Data Agent の作成</h1>
 <h3 id="_1">📢 導入</h3>
-<p>このモジュールでは、Synapse Data Warehouse に格納された NYC Taxi Dataset をもとに、セマンティックモデルの構築から Power BI によるレポート作成までを行います。Copilot を活用することで、視覚的な分析やエグゼクティブサマリーの生成を効率的に進めることができ、データに基づいた意思決定を支援するレポート作成スキルを習得します。</p>
+<p>このモジュールでは、Microsoft Fabric の Data Agent 機能を活用して、自然言語でデータに対する質問を投げかけ、インサイトを得ることができる AI エージェントを構築します。Data Agent は、構築したデータウェアハウスやセマンティックモデルに対して、技術的な知識がなくても誰でも簡単にデータ分析を行えるようにする強力なツールです。</p>
 <h3 id="_2">🎯 ゴール</h3>
 <ul>
-<li>セマンティックモデルの構築とリレーションの設定</li>
-<li>Power BI によるレポートの自動生成と編集</li>
-<li>Copilot を活用したレポートの強化と要約の作成</li>
-<li>レポートの保存とワークスペースへの反映</li>
+<li>Data Agent の作成と基本設定の理解</li>
+<li>セマンティックモデルとの接続設定</li>
+<li>自然言語クエリによるデータ探索</li>
+<li>エージェントの動作確認とテスト</li>
 </ul>
-<h2 id="_3">セマンティック モデルの作成</h2>
+<h2 id="_3">タスクの追加</h2>
 <ol>
 <li>
-<p>タスクフローの<strong>処理されたデータ</strong>から<strong>新しい項目</strong>を選択します。</p>
-<p><a class="glightbox" href="../images/module05/image-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-2.png" /></a></p>
+<p>自身のワークスペースから<strong>タスクの追加</strong>から<strong>データの分析とトレーニング</strong>をクリックします。</p>
+<p><a class="glightbox" href="../images/module06/image-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-1.png" /></a></p>
 </li>
 <li>
-<p><strong>セマンティックモデル</strong>を選択します。</p>
-<p><a class="glightbox" href="../images/module05/image-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-3.png" /></a></p>
+<p><strong>分析とトレーニング</strong>を可視化の下に移動し、<strong>処理されたデータ</strong>の右端をドラッグして<strong>分析とトレーニング</strong>の左端に矢印を伸ばします。</p>
+<p><a class="glightbox" href="../images/module06/image.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image.png" width="80%" /></a></p>
 </li>
 <li>
-<p><strong>OneLake カタログ</strong>を選択します。</p>
-<p><a class="glightbox" href="../images/module05/image-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-4.png" /></a></p>
-</li>
-<li>
-<p>自身のウェアハウスを選択します。</p>
-<p><a class="glightbox" href="../images/module05/image-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-6.png" /></a></p>
-</li>
-<li>
-<p><strong>名前</strong>を入力し<strong>すべて選択</strong>をチェックして確認をクリックします。</p>
-<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
-<p><strong>Direct Lake セマンティック モデル名</strong></p>
-<div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_16_semantic_model_taxi
-</code></pre></div>
-</div>
-<p><a class="glightbox" href="../images/module05/image-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-8.png" /></a></p>
-</li>
-<li>
-<p><code>fact_greentrip</code>をディメンション表の下に移動します。</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>画面が見にくい場合は、右下でズームを変えてください。<br />
-画面右側のプロパティを折りたたむこともできます。</p>
-</div>
-<p><a class="glightbox" href="../images/module05/image-9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-9.png" /></a></p>
-</li>
-<li>
-<p><code>fact_greentrip</code>の<strong>payment_type</strong>列を<code>dimension_PaymentType</code>の<strong>payment_type</strong>列にドラッグ＆ドロップします。</p>
-<p><a class="glightbox" href="../images/module05/image-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-10.png" /></a></p>
-</li>
-<li>
-<p>多対一のリレーションシップになっていることを確認して保存します。</p>
-<p><a class="glightbox" href="../images/module05/image-11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-11.png" /></a></p>
-</li>
-<li>
-<p>同じ要領で次の列のリレーションシップを作成します。</p>
-<ul>
-<li>RatecodeID(fact_greentrip) → RatecodeID(dimension_RatecodeID)</li>
-<li>PUlocationID (fact_greentrip) → LocationID(dimension_taxiZoneLookup)</li>
-<li>trip_type(fact_greentrip) → Trip_type(dimension_TripType)</li>
-<li>VendorID(fact_greentrip) → VendorID(dimension_VendorID)</li>
-</ul>
-<p><a class="glightbox" href="../images/module05/image-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-12.png" /></a></p>
-</li>
-<li>
-<p>モデルを<strong>更新</strong>します。</p>
-<p><a class="glightbox" href="../images/module05/image-13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-13.png" /></a></p>
-</li>
-<li>
-<p><strong>DAX クエリビュー</strong>に移動します。</p>
-<p><a class="glightbox" href="../images/module05/image-14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-14.png" /></a></p>
-</li>
-<li>
-<p><strong>メジャーの提案</strong>をクリックし<strong>変更を含むモデルの更新</strong>を行います。</p>
-<p><a class="glightbox" href="../images/module05/image-15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-15.png" /></a></p>
-</li>
-<li>
-<p>セマンティック モデルにメジャーが追加されていることを確認します。</p>
-<p><a class="glightbox" href="../images/module05/image-18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-18.png" width="40%" /></a></p>
-</li>
-<li>
-<p><strong>モデル ビュー</strong>に戻り<strong>ファイル＞新しいレポートの作成</strong>をクリックします。</p>
-<p><a class="glightbox" href="../images/module05/image-17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-17.png" /></a></p>
+<p>以下のようになります。</p>
+<p><a class="glightbox" href="../images/module06/image-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-2.png" width="80%" /></a></p>
 </li>
 </ol>
-<h2 id="power-bi">Power BIレポートの作成</h2>
+<h2 id="data-agent">Data Agent の作成</h2>
 <ol>
 <li>
-<p>Power BIのレポート作成画面に移動したら<strong>Copilot</strong>をクリックします。</p>
-<p><a class="glightbox" href="../images/module05/image-19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-19.png" /></a></p>
+<p>ワークスペースをクリックしタスクフローの<strong>分析とトレーニング</strong>から<strong>新しい項目</strong>を選択します。</p>
+<p><a class="glightbox" href="../images/module06/image-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-3.png" width="80%" /></a></p>
 </li>
 <li>
-<p>チャットに次の文章を入力し送信します。</p>
+<p><strong>データ エージェント</strong>を選択します。</p>
+<p><a class="glightbox" href="../images/module06/image-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-4.png" /></a></p>
+</li>
+<li>
+<p><strong>名前</strong>を入力して作成します。</p>
 <div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
-<p><strong>テキスト</strong></p>
-<div class="highlight"><pre><span></span><code>様々な条件による料金の傾向を多角的に分析するページを1枚作成してください。
-ビジュアルは8個程度としてください。
-ページ名は「NYCタクシー乗降者データ分析レポート」とします。
+<p><strong>名前</strong></p>
+<div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_18_data_agent_taxi
 </code></pre></div>
 </div>
-<p><a class="glightbox" href="../images/module05/image-20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-20.png" width="70%" /></a></p>
+<p><a class="glightbox" href="../images/module06/image-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-5.png" width="60%" /></a></p>
+</li>
+</ol>
+<h2 id="_4">データソースの接続</h2>
+<ol>
+<li>
+<p>Data Agent の作成画面が表示されたら<strong>データの追加＞データ ソース</strong>をクリックします。</p>
+<p><a class="glightbox" href="../images/module06/image-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-6.png" /></a></p>
 </li>
 <li>
-<p>Copilotによってレポートが作成されます。</p>
-<p><a class="glightbox" href="../images/module05/image-21.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-21.png" /></a></p>
+<p><strong>セマンティックモデル</strong>（<code>[イニシャル][2桁の数字]_16_semantic_model_taxi</code>）を選択します。</p>
+<p><a class="glightbox" href="../images/module06/image-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-7.png" /></a></p>
+</li>
+<li>
+<p><strong>すべてのテーブル</strong>をチェックします。</p>
+<p><a class="glightbox" href="../images/module06/image-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-8.png" width="70%" /></a></p>
+</li>
+</ol>
+<h2 id="_5">エージェントの設定</h2>
+<ol>
+<li>
+<p><strong>説明アイコン</strong>をクリックしエージェントの説明を入力します。</p>
+<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
+<p><strong>説明</strong></p>
+<div class="highlight"><pre><span></span><code>このエージェントは、NYC タクシーデータセットに関する質問に回答します。
+トリップ情報、支払いタイプ、場所、ベンダー情報などのデータを分析できます。
+</code></pre></div>
+</div>
+<p><a class="glightbox" href="../images/module06/image-9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-9.png" /></a></p>
+</li>
+<li>
+<p><strong>指示</strong>タブに移動し、エージェントの動作に関する指示を入力します。</p>
+<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
+<p><strong>エージェントの指示</strong></p>
+<div class="highlight"><pre><span></span><code>以下の指示に従ってください：
+- ユーザーの質問を丁寧に理解し、適切なテーブルとカラムを使用してください
+- 数値は適切にフォーマットして表示してください（例：金額は小数点2桁まで）
+- 日付や時間に関する質問には、適切な集計レベルで回答してください
+- わからない場合は、利用可能なデータの範囲を説明してください
+- 回答は日本語で提供してください
+</code></pre></div>
+</div>
+<p><a class="glightbox" href="../images/module06/image-10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-10.png" /></a></p>
+</li>
+</ol>
+<h2 id="_6">エージェントのテスト</h2>
+<ol>
+<li>
+<p>次の質問を入力してエージェントをテストします。</p>
+<div class="highlight"><pre><span></span><code>最も多く利用されている支払いタイプは何ですか？
+</code></pre></div>
+<p><a class="glightbox" href="../images/module06/image-12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-12.png" /></a></p>
+<p>クレジットカードによる支払いが最も多いと返ります。</p>
+<p><a class="glightbox" href="../images/module06/image-14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-14.png" /></a></p>
+</li>
+<li>
+<p>より複雑な分析を依頼してみます。</p>
+<div class="highlight"><pre><span></span><code>支払い種別毎に、平均料金、平均チップ、平均距離を表にまとめてください
+</code></pre></div>
+<p><a class="glightbox" href="../images/module06/image-13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-13.png" /></a></p>
+</li>
+</ol>
+<h2 id="_7">エージェントのクエリ履歴の確認</h2>
+<ol>
+<li>
+<p><strong>手順が完了しました</strong>を展開し、右端の<strong>∨</strong>を展開します。</p>
+<p><a class="glightbox" href="../images/module06/image-15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-15.png" /></a></p>
+</li>
+<li>
+<p>エージェントが実行した DAX クエリとその結果を確認します。</p>
+<p><a class="glightbox" href="../images/module06/image-16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-16.png" /></a>
+<a class="glightbox" href="../images/module06/image-17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-17.png" /></a></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>必ずしも上記と同じレポートが作成されるとは限りません。<br />
-以降の手順はご自身のレポートに置き換えて操作してください。</p>
+<p>このクエリ履歴は、エージェントがどのようにユーザーの質問を解釈し、データクエリに変換しているかを理解するのに役立ちます。</p>
 </div>
 </li>
-<li>
-<p>いくつかのビジュアルをクリックし縮めたり移動してスペースを確保しクリックします。</p>
-<p><a class="glightbox" href="../images/module05/image-22.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-22.png" /></a></p>
-</li>
-<li>
-<p>視覚化から<strong>説明のアイコン</strong>をクリックします。</p>
-<p><a class="glightbox" href="../images/module05/image-23.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-23.png" width="50%" /></a></p>
-</li>
-<li>
-<p><strong>エグゼクティブ サマリーを提供する</strong>をクリックし更新します。</p>
-<p><a class="glightbox" href="../images/module05/image-24.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-24.png" width="80%" /></a></p>
-</li>
-<li>
-<p>表示が更新されない場合は<strong>更新</strong>をクリックしてください。</p>
-<p><a class="glightbox" href="../images/module05/image-25.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-25.png" /></a></p>
-</li>
-<li>
-<p>エグゼクティブ サマリーが作成されたら任意の場所の番号をクリックします。</p>
-<p><a class="glightbox" href="../images/module05/image-26.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-26.png" width="80%" /></a></p>
-</li>
-<li>
-<p>該当箇所にフォーカスが当たることを確認します。</p>
-<p><a class="glightbox" href="../images/module05/image-27.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-27.png" /></a></p>
-</li>
-<li>
-<p>チャットに自由にメッセージを入れてCopilotの応答を確認してください。</p>
-<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
-<p><strong>入力例</strong></p>
-<div class="highlight"><pre><span></span><code>このレポートを使って上司に説明をします。重要なポイントを日本語で3つ教えてください。
-</code></pre></div>
+</ol>
+<p>Data Agent を活用することで、技術的な知識がないユーザーでも、自然言語でデータに対する質問を投げかけ、即座にインサイトを得ることができます。これにより、組織全体でのデータ活用が促進され、データドリブンな意思決定を加速できます。</p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>お疲れさまでした！これで Microsoft Fabric ワークショップのすべてのモジュールが完了しました。</p>
 </div>
-<p><a class="glightbox" href="../images/module05/image-28.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-28.png" width="80%" /></a></p>
-<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
-<p><strong>入力例</strong></p>
-<div class="highlight"><pre><span></span><code>上司に説明をした際に想定される質問3つとその答えを教えてください。
-</code></pre></div>
-</div>
-<p><a class="glightbox" href="../images/module05/image-29.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-29.png" width="80%" /></a></p>
+<h2 id="_8">さいごに</h2>
+<ol>
+<li>
+<p>ワークスペースに戻り右上にある<strong>データ系列ビュー</strong>アイコンをクリックします。</p>
+<p><a class="glightbox" href="../images/module06/image-18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-18.png" /></a></p>
 </li>
 <li>
-<p>ファイルから<strong>名前を付けて保存</strong>を選択します。</p>
-<p><a class="glightbox" href="../images/module05/image-30.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-30.png" /></a></p>
-</li>
-<li>
-<p>次の情報を入力して保存します。</p>
-<div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
-<p><strong>レポートの名前</strong></p>
-<div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_17_report_summary
-</code></pre></div>
-<p><strong>タスク</strong></p>
-<p><code>視覚化</code></p>
-</div>
-<p><a class="glightbox" href="../images/module05/image-32.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module05/image-32.png" /></a></p>
+<p>今回作成したアイテムの関連が表示されます。</p>
+<p><a class="glightbox" href="../images/module06/image-19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../images/module06/image-19.png" /></a></p>
 </li>
 </ol>
 
