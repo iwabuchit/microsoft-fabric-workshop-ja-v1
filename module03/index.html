@@ -570,6 +570,10 @@
 <li>Sparkノートブックを用いたデータ加工とDeltaテーブルの作成</li>
 <li>グラフ表示によるデータの可視化</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">事前準備</p>
+<p><strong>Azure Data Lake Storage Gen2</strong>および<strong>SharePoint</strong>の接続先と利用に必要なアクセス権は、ワークショップ実施テナントで事前に用意されている必要があります。接続先やアクセス権が確認できない場合は、ワークショップ開始前に管理者へお問い合わせください。</p>
+</div>
 <h2 id="adls-gen2">ショートカットの作成（ADLS Gen2を利用）</h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -588,8 +592,10 @@
 <p><strong>新しい接続</strong>を選択し接続情報を入力します。</p>
 <div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
 <p><strong>URL</strong></p>
-<div class="highlight"><pre><span></span><code>https://wwilab001adls001.dfs.core.windows.net/
+<div class="highlight"><pre><span></span><code>https://adlshandson001.dfs.core.windows.net/
 </code></pre></div>
+<!-- https://wwilab001adls001.dfs.core.windows.net/
+ -->
 <p><strong>接続名</strong></p>
 <div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_06_datasource_adls
 </code></pre></div>
@@ -630,8 +636,10 @@
 <p><strong>新しい接続</strong>を選択し接続情報を入力します。</p>
 <div class="grid" markdown style="grid-template-columns: 2fr 1fr;">
 <p><strong>URL</strong></p>
-<div class="highlight"><pre><span></span><code>https://mngenvmcap464372.sharepoint.com/sites/FabricE2EHandsOnWS2
+<div class="highlight"><pre><span></span><code>https://m365cpi21322398.sharepoint.com/sites/FabricHandsOnGroup
 </code></pre></div>
+<!--    https://mngenvmcap464372.sharepoint.com/sites/FabricE2EHandsOnWS2
+-->
 <p><strong>接続名</strong></p>
 <div class="highlight"><pre><span></span><code>[イニシャル][2桁の数字]_06_datasource_spo
 </code></pre></div>
